@@ -207,16 +207,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sanders/proprietary/vendor/etc/wifi/WCNSS_qcom_wlan_nv_India.bin:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_wlan_nv_India.bin \
     vendor/motorola/sanders/proprietary/vendor/etc/wifi/WCNSS_qcom_wlan_nv_epa.bin:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_wlan_nv_epa.bin \
     vendor/motorola/sanders/proprietary/vendor/etc/wifi/WCNSS_wlan_dictionary.dat:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_wlan_dictionary.dat \
-    vendor/motorola/sanders/proprietary/vendor/firmware/FT8006U_Pramboot.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/FT8006U_Pramboot.bin \
-    vendor/motorola/sanders/proprietary/vendor/firmware/a225_pfp.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a225_pfp.fw \
-    vendor/motorola/sanders/proprietary/vendor/firmware/a225_pm4.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a225_pm4.fw \
-    vendor/motorola/sanders/proprietary/vendor/firmware/a225p5_pm4.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a225p5_pm4.fw \
-    vendor/motorola/sanders/proprietary/vendor/firmware/a300_pfp.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a300_pfp.fw \
-    vendor/motorola/sanders/proprietary/vendor/firmware/a300_pm4.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a300_pm4.fw \
-    vendor/motorola/sanders/proprietary/vendor/firmware/a330_pfp.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a330_pfp.fw \
-    vendor/motorola/sanders/proprietary/vendor/firmware/a330_pm4.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a330_pm4.fw \
-    vendor/motorola/sanders/proprietary/vendor/firmware/a420_pfp.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a420_pfp.fw \
-    vendor/motorola/sanders/proprietary/vendor/firmware/a420_pm4.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a420_pm4.fw \
     vendor/motorola/sanders/proprietary/vendor/firmware/a530_gpmu.fw2:$(TARGET_COPY_OUT_VENDOR)/firmware/a530_gpmu.fw2 \
     vendor/motorola/sanders/proprietary/vendor/firmware/a530_pfp.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a530_pfp.fw \
     vendor/motorola/sanders/proprietary/vendor/firmware/a530_pm4.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a530_pm4.fw \
@@ -226,8 +216,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sanders/proprietary/vendor/firmware/a530v3_gpmu.fw2:$(TARGET_COPY_OUT_VENDOR)/firmware/a530v3_gpmu.fw2 \
     vendor/motorola/sanders/proprietary/vendor/firmware/a530v3_seq.fw2:$(TARGET_COPY_OUT_VENDOR)/firmware/a530v3_seq.fw2 \
     vendor/motorola/sanders/proprietary/vendor/firmware/a540_gpmu.fw2:$(TARGET_COPY_OUT_VENDOR)/firmware/a540_gpmu.fw2 \
-    vendor/motorola/sanders/proprietary/vendor/firmware/a630_gmu.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/a630_gmu.bin \
-    vendor/motorola/sanders/proprietary/vendor/firmware/a630_sqe.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a630_sqe.fw \
     vendor/motorola/sanders/proprietary/vendor/firmware/cpp_firmware_v1_10_0.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/cpp_firmware_v1_10_0.fw \
     vendor/motorola/sanders/proprietary/vendor/firmware/cpp_firmware_v1_12_0.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/cpp_firmware_v1_12_0.fw \
     vendor/motorola/sanders/proprietary/vendor/firmware/cpp_firmware_v1_1_1.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/cpp_firmware_v1_1_1.fw \
@@ -239,18 +227,9 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sanders/proprietary/vendor/firmware/cpp_firmware_v1_5_2.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/cpp_firmware_v1_5_2.fw \
     vendor/motorola/sanders/proprietary/vendor/firmware/cpp_firmware_v1_6_0.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/cpp_firmware_v1_6_0.fw \
     vendor/motorola/sanders/proprietary/vendor/firmware/cpp_firmware_v1_8_0.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/cpp_firmware_v1_8_0.fw \
-    vendor/motorola/sanders/proprietary/vendor/firmware/emmc_ffu_15_FE12MB.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/emmc_ffu_15_FE12MB.fw \
-    vendor/motorola/sanders/proprietary/vendor/firmware/emmc_ffu_15_QE13MB.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/emmc_ffu_15_QE13MB.fw \
-    vendor/motorola/sanders/proprietary/vendor/firmware/emmc_ffu_15_RC14MB.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/emmc_ffu_15_RC14MB.fw \
-    vendor/motorola/sanders/proprietary/vendor/firmware/emmc_ffu_15_RC1BMB.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/emmc_ffu_15_RC1BMB.fw \
-    vendor/motorola/sanders/proprietary/vendor/firmware/emmc_ffu_15_RE1BMB.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/emmc_ffu_15_RE1BMB.fw \
-    vendor/motorola/sanders/proprietary/vendor/firmware/emmc_ffu_15_RX14MB.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/emmc_ffu_15_RX14MB.fw \
-    vendor/motorola/sanders/proprietary/vendor/firmware/emmc_ffu_15_RX1BMB.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/emmc_ffu_15_RX1BMB.fw \
     vendor/motorola/sanders/proprietary/vendor/firmware/focaltech-biel-ft5436-06-0001-sanders.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/focaltech-biel-ft5436-06-0001-sanders.bin \
     vendor/motorola/sanders/proprietary/vendor/firmware/focaltech-djn-ft5436-02-0001-sanders.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/focaltech-djn-ft5436-02-0001-sanders.bin \
     vendor/motorola/sanders/proprietary/vendor/firmware/focaltech-toptouch-ft5436-0a-0001-sanders.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/focaltech-toptouch-ft5436-0a-0001-sanders.bin \
-    vendor/motorola/sanders/proprietary/vendor/firmware/leia_pfp_470.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/leia_pfp_470.fw \
-    vendor/motorola/sanders/proprietary/vendor/firmware/leia_pm4_470.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/leia_pm4_470.fw \
     vendor/motorola/sanders/proprietary/vendor/lib/camera.device@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera.device@1.0-impl.so \
     vendor/motorola/sanders/proprietary/vendor/lib/com.fingerprints.extension@1.0_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.fingerprints.extension@1.0_vendor.so \
     vendor/motorola/sanders/proprietary/vendor/lib/com.qualcomm.qti.imscmservice@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qualcomm.qti.imscmservice@1.0.so \
