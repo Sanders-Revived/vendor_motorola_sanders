@@ -132,8 +132,6 @@ PRODUCT_PACKAGES += \
     libGLESv2_adreno \
     libQTapGLES \
     libq3dtools_adreno \
-    vendor.qti.hardware.fm@1.0-impl \
-    lib-imsdpl \
     libC2D2 \
     libCB \
     libOpenCL \
@@ -155,7 +153,6 @@ PRODUCT_PACKAGES += \
     libdsutils \
     libfastcvadsp_stub \
     libfastcvopt \
-    libfm-hci \
     libgsl \
     libhdr_tm \
     libidl \
@@ -205,12 +202,10 @@ PRODUCT_PACKAGES += \
     vendor.display.postproc@1.0 \
     vendor.qti.hardware.qdutils_disp@1.0 \
     vendor.qti.hardware.tui_comm@1.0 \
-    camera.device@1.0-impl \
     com.fingerprints.extension@1.0_vendor \
     camera.msm8953 \
     libFileMux \
     libOmxMux \
-    libOmxVideoDSMode \
     libOmxVpp \
     lib_mot_app6_metadata \
     lib_mot_led_calibration \
@@ -722,8 +717,6 @@ PRODUCT_PACKAGES += \
     libubifocus \
     libvideoutils \
     libvqzip \
-    motorola.hardware.camera.device@1.0 \
-    motorola.hardware.camera.provider@2.4 \
     com.qualcomm.qti.imscmservice@2.0 \
     com.qualcomm.qti.imscmservice@2.1 \
     com.qualcomm.qti.imscmservice@2.2 \
@@ -741,9 +734,11 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.bluetooth_sar@1.1-impl \
     vendor.qti.hardware.btconfigstore@1.0-impl \
     vendor.qti.hardware.btconfigstore@2.0-impl \
+    vendor.qti.hardware.fm@1.0-impl \
     vulkan.msm8953 \
     lib-imsSDP \
     lib-imscmservice \
+    lib-imsdpl \
     lib-imsqimf \
     lib-imsrcs-v2 \
     lib-imsrcsbaseimpl \
@@ -771,6 +766,7 @@ PRODUCT_PACKAGES += \
     libdisplayconfig.qti \
     libdrmfs \
     libdrmtime \
+    libfm-hci \
     libgdtap \
     libgeofencing \
     libgnss \
@@ -814,7 +810,6 @@ PRODUCT_PACKAGES += \
     librpmb \
     libsecureui \
     libsecureui_svcsock \
-    libsettings \
     libsoc_helper \
     libspl \
     libssd \
@@ -956,7 +951,6 @@ PRODUCT_PACKAGES += \
     tftp_server \
     thermal-engine \
     time_daemon \
-    wcnss_service \
     xtra-daemon \
     xtwifi-client \
     xtwifi-inet-agent
