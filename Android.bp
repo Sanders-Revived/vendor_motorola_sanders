@@ -1853,10 +1853,21 @@ cc_prebuilt_library_shared {
             srcs: [
                 "proprietary/vendor/lib/com.fingerprints.extension@1.0_vendor.so",
             ],
+            shared_libs: [
+                "libhidlbase-v32",
+                "libhidltransport",
+                "libhwbinder",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
         },
     },
     compile_multilib: "32",
-    check_elf_files: false,
     prefer: true,
     soc_specific: true,
 }
@@ -15519,7 +15530,7 @@ cc_prebuilt_binary {
             ],
             shared_libs: [
                 "liblog",
-                "libhidlbase",
+                "libhidlbase-v32",
                 "libhidltransport",
                 "libutils",
                 "android.hardware.biometrics.fingerprint@2.1",
