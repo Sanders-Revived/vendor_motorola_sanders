@@ -269,15 +269,34 @@ cc_prebuilt_library_shared {
             srcs: [
                 "proprietary/vendor/lib/libacdb-fts.so",
             ],
+            shared_libs: [
+                "libcutils",
+                "libutils",
+                "liblog",
+                "libaudcal",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
         },
         android_arm64: {
             srcs: [
                 "proprietary/vendor/lib64/libacdb-fts.so",
             ],
+            shared_libs: [
+                "libcutils",
+                "libutils",
+                "liblog",
+                "libaudcal",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
         },
     },
     compile_multilib: "both",
-    check_elf_files: false,
     prefer: true,
     soc_specific: true,
 }
@@ -293,15 +312,42 @@ cc_prebuilt_library_shared {
             srcs: [
                 "proprietary/vendor/lib/libacdbloader.so",
             ],
+            shared_libs: [
+                "libcutils",
+                "libutils",
+                "liblog",
+                "libaudcal",
+                "libtinyalsa",
+                "libacdbrtac",
+                "libadiertac",
+                "libacdb-fts",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
         },
         android_arm64: {
             srcs: [
                 "proprietary/vendor/lib64/libacdbloader.so",
             ],
+            shared_libs: [
+                "libcutils",
+                "libutils",
+                "liblog",
+                "libaudcal",
+                "libtinyalsa",
+                "libacdbrtac",
+                "libadiertac",
+                "libacdb-fts",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
         },
     },
     compile_multilib: "both",
-    check_elf_files: false,
     prefer: true,
     soc_specific: true,
 }
@@ -317,15 +363,34 @@ cc_prebuilt_library_shared {
             srcs: [
                 "proprietary/vendor/lib/libacdbrtac.so",
             ],
+            shared_libs: [
+                "libcutils",
+                "libutils",
+                "liblog",
+                "libaudcal",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
         },
         android_arm64: {
             srcs: [
                 "proprietary/vendor/lib64/libacdbrtac.so",
             ],
+            shared_libs: [
+                "libcutils",
+                "libutils",
+                "liblog",
+                "libaudcal",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
         },
     },
     compile_multilib: "both",
-    check_elf_files: false,
     prefer: true,
     soc_specific: true,
 }
@@ -341,15 +406,34 @@ cc_prebuilt_library_shared {
             srcs: [
                 "proprietary/vendor/lib/libadiertac.so",
             ],
+            shared_libs: [
+                "libcutils",
+                "libutils",
+                "liblog",
+                "libaudcal",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
         },
         android_arm64: {
             srcs: [
                 "proprietary/vendor/lib64/libadiertac.so",
             ],
+            shared_libs: [
+                "libcutils",
+                "libutils",
+                "liblog",
+                "libaudcal",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
         },
     },
     compile_multilib: "both",
-    check_elf_files: false,
     prefer: true,
     soc_specific: true,
 }
@@ -389,15 +473,30 @@ cc_prebuilt_library_shared {
             srcs: [
                 "proprietary/vendor/lib/libadsp_default_listener.so",
             ],
+            shared_libs: [
+                "liblog",
+                "libadsprpc",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
         },
         android_arm64: {
             srcs: [
                 "proprietary/vendor/lib64/libadsp_default_listener.so",
             ],
+            shared_libs: [
+                "liblog",
+                "libadsprpc",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
         },
     },
     compile_multilib: "both",
-    check_elf_files: false,
     prefer: true,
     soc_specific: true,
 }
@@ -413,15 +512,30 @@ cc_prebuilt_library_shared {
             srcs: [
                 "proprietary/vendor/lib/libadsprpc.so",
             ],
+            shared_libs: [
+                "liblog",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
         },
         android_arm64: {
             srcs: [
                 "proprietary/vendor/lib64/libadsprpc.so",
             ],
+            shared_libs: [
+                "liblog",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
         },
     },
     compile_multilib: "both",
-    check_elf_files: false,
     prefer: true,
     soc_specific: true,
 }
@@ -437,15 +551,32 @@ cc_prebuilt_library_shared {
             srcs: [
                 "proprietary/vendor/lib/libaudcal.so",
             ],
+            shared_libs: [
+                "libutils",
+                "liblog",
+                "libdiag",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
         },
         android_arm64: {
             srcs: [
                 "proprietary/vendor/lib64/libaudcal.so",
             ],
+            shared_libs: [
+                "libutils",
+                "liblog",
+                "libdiag",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
         },
     },
     compile_multilib: "both",
-    check_elf_files: false,
     prefer: true,
     soc_specific: true,
 }
@@ -461,15 +592,26 @@ cc_prebuilt_library_shared {
             srcs: [
                 "proprietary/vendor/lib/libaudioalsa.so",
             ],
+            shared_libs: [
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
         },
         android_arm64: {
             srcs: [
                 "proprietary/vendor/lib64/libaudioalsa.so",
             ],
+            shared_libs: [
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
         },
     },
     compile_multilib: "both",
-    check_elf_files: false,
     prefer: true,
     soc_specific: true,
 }
@@ -485,15 +627,30 @@ cc_prebuilt_library_shared {
             srcs: [
                 "proprietary/vendor/lib/libaudioparsers.so",
             ],
+            shared_libs: [
+                "libutils",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
         },
         android_arm64: {
             srcs: [
                 "proprietary/vendor/lib64/libaudioparsers.so",
             ],
+            shared_libs: [
+                "libutils",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
         },
     },
     compile_multilib: "both",
-    check_elf_files: false,
     prefer: true,
     soc_specific: true,
 }
@@ -629,15 +786,30 @@ cc_prebuilt_library_shared {
             srcs: [
                 "proprietary/vendor/lib/libfastcvadsp_stub.so",
             ],
+            shared_libs: [
+                "liblog",
+                "libadsprpc",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
         },
         android_arm64: {
             srcs: [
                 "proprietary/vendor/lib64/libfastcvadsp_stub.so",
             ],
+            shared_libs: [
+                "liblog",
+                "libadsprpc",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
         },
     },
     compile_multilib: "both",
-    check_elf_files: false,
     prefer: true,
     soc_specific: true,
 }
@@ -653,15 +825,32 @@ cc_prebuilt_library_shared {
             srcs: [
                 "proprietary/vendor/lib/libfastcvopt.so",
             ],
+            shared_libs: [
+                "liblog",
+                "libion",
+                "libOpenCL",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
         },
         android_arm64: {
             srcs: [
                 "proprietary/vendor/lib64/libfastcvopt.so",
             ],
+            shared_libs: [
+                "liblog",
+                "libion",
+                "libOpenCL",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
         },
     },
     compile_multilib: "both",
-    check_elf_files: false,
     prefer: true,
     soc_specific: true,
 }
@@ -873,78 +1062,6 @@ cc_prebuilt_library_shared {
         android_arm64: {
             srcs: [
                 "proprietary/vendor/lib64/libpdmapper.so",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    check_elf_files: false,
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libperfconfig",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libperfconfig.so",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libperfconfig.so",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    check_elf_files: false,
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libperfgluelayer",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libperfgluelayer.so",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libperfgluelayer.so",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    check_elf_files: false,
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libperfioctl",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libperfioctl.so",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libperfioctl.so",
             ],
         },
     },
@@ -1243,102 +1360,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libqti-perfd-client",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libqti-perfd-client.so",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libqti-perfd-client.so",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    check_elf_files: false,
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libqti-perfd",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libqti-perfd.so",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libqti-perfd.so",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    check_elf_files: false,
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libqti-util-vendor",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libqti-util-vendor.so",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libqti-util-vendor.so",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    check_elf_files: false,
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libqti-util",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libqti-util.so",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libqti-util.so",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    check_elf_files: false,
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libqtigef",
     owner: "motorola",
     strip: {
@@ -1349,15 +1370,30 @@ cc_prebuilt_library_shared {
             srcs: [
                 "proprietary/vendor/lib/libqtigef.so",
             ],
+            shared_libs: [
+                "liblog",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
         },
         android_arm64: {
             srcs: [
                 "proprietary/vendor/lib64/libqtigef.so",
             ],
+            shared_libs: [
+                "liblog",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
         },
     },
     compile_multilib: "both",
-    check_elf_files: false,
     prefer: true,
     soc_specific: true,
 }
@@ -13076,6 +13112,89 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libperfconfig",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libperfconfig.so",
+            ],
+            shared_libs: [
+                "libutils",
+                "liblog",
+                "libcutils",
+                "libxml2",
+                "libqti-util-vendor",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libperfgluelayer",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libperfgluelayer.so",
+            ],
+            shared_libs: [
+                "libutils",
+                "liblog",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libperfioctl",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libperfioctl.so",
+            ],
+            shared_libs: [
+                "libutils",
+                "liblog",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libperipheral_client",
     owner: "motorola",
     strip: {
@@ -13238,10 +13357,144 @@ cc_prebuilt_library_shared {
             srcs: [
                 "proprietary/vendor/lib64/libqti-perfd-client-vendor.so",
             ],
+            shared_libs: [
+                "libcutils",
+                "libutils",
+                "liblog",
+                "vendor.qti.hardware.perf@2.2",
+                "libhidlbase",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
         },
     },
     compile_multilib: "64",
-    check_elf_files: false,
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libqti-perfd-client",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libqti-perfd-client.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libutils",
+                "liblog",
+                "vendor.qti.hardware.perf@2.2",
+                "libhidlbase",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libqti-perfd",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libqti-perfd.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libxml2",
+                "libqti-util-vendor",
+                "libhidlbase",
+                "vendor.qti.hardware.perf@2.0",
+                "libbase",
+                "libthermalclient",
+                "libqti-perfd-client-vendor",
+                "libperfconfig",
+                "libperfgluelayer",
+                "libdisplayconfig.qti",
+                "libperfioctl",
+                "vendor.qti.memory.pasrmanager@1.1",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libqti-util-vendor",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libqti-util-vendor.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libutils",
+                "libxml2",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libqti-util",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libqti-util.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libutils",
+                "libxml2",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
     prefer: true,
     soc_specific: true,
 }
@@ -14933,6 +15186,63 @@ cc_prebuilt_library_shared {
     },
     compile_multilib: "64",
     check_elf_files: false,
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.qti.memory.pasrmanager@1.0",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.qti.memory.pasrmanager@1.0.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.qti.memory.pasrmanager@1.1",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.qti.memory.pasrmanager@1.1.so",
+            ],
+            shared_libs: [
+                "vendor.qti.memory.pasrmanager@1.0",
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
     prefer: true,
     soc_specific: true,
 }

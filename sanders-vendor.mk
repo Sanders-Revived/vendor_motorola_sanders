@@ -162,9 +162,6 @@ PRODUCT_PACKAGES += \
     libmm-hdcpmgr \
     libmmosal \
     libpdmapper \
-    libperfconfig \
-    libperfgluelayer \
-    libperfioctl \
     libqcci_legacy \
     libqdi \
     libqdp \
@@ -177,10 +174,6 @@ PRODUCT_PACKAGES += \
     libqmi_encdec \
     libqmi_legacy \
     libqmiservices \
-    libqti-perfd-client \
-    libqti-perfd \
-    libqti-util-vendor \
-    libqti-util \
     libqtigef \
     libscalar \
     libsdm-color \
@@ -792,6 +785,9 @@ PRODUCT_PACKAGES += \
     liboemaids_vendor \
     liboemcrypto \
     libops \
+    libperfconfig \
+    libperfgluelayer \
+    libperfioctl \
     libperipheral_client \
     libqcc_file_agent \
     libqcmaputils \
@@ -801,6 +797,10 @@ PRODUCT_PACKAGES += \
     libqrtr \
     libqsocket \
     libqti-perfd-client-vendor \
+    libqti-perfd-client \
+    libqti-perfd \
+    libqti-util-vendor \
+    libqti-util \
     libril-qc-hal-qmi \
     libril-qc-logger \
     libril-qc-ltedirectdisc \
@@ -890,6 +890,8 @@ PRODUCT_PACKAGES += \
     vendor.qti.ims.rcsconfig@2.1 \
     vendor.qti.latency@2.0 \
     vendor.qti.latency@2.1 \
+    vendor.qti.memory.pasrmanager@1.0 \
+    vendor.qti.memory.pasrmanager@1.1 \
     libavenhancements \
     libmmparserextractor \
     libmmparser_lite \
