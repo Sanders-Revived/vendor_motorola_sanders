@@ -11826,6 +11826,39 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "deviceInfoServiceModule",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/deviceInfoServiceModule.so",
+            ],
+            shared_libs: [
+                "vendor.qti.hardware.radio.internal.deviceinfo@1.0",
+                "libqcrilFramework",
+                "libril-qc-hal-qmi",
+                "libril-qc-logger",
+                "libutils",
+                "librilqmiservices",
+                "libqmi_cci",
+                "libhidlbase",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "fm_helium",
     owner: "motorola",
     strip: {
@@ -12631,10 +12664,19 @@ cc_prebuilt_library_shared {
             srcs: [
                 "proprietary/vendor/lib64/libdisplayconfig.qti.so",
             ],
+            shared_libs: [
+                "liblog",
+                "libhidlbase",
+                "libutils",
+                "vendor.display.config@2.0",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
         },
     },
     compile_multilib: "64",
-    check_elf_files: false,
     prefer: true,
     soc_specific: true,
 }
@@ -15726,6 +15768,18 @@ android_app_import {
     dex_preopt: {
         enabled: false,
     },
+    system_ext_specific: true,
+}
+
+android_app_import {
+    name: "ims",
+    owner: "motorola",
+    apk: "proprietary/system_ext/priv-app/ims/ims.apk",
+    certificate: "platform",
+    dex_preopt: {
+        enabled: false,
+    },
+    privileged: true,
     system_ext_specific: true,
 }
 

@@ -717,6 +717,7 @@ PRODUCT_PACKAGES += \
     com.qualcomm.qti.uceservice@2.1 \
     com.qualcomm.qti.uceservice@2.2 \
     com.qualcomm.qti.uceservice@2.3 \
+    deviceInfoServiceModule \
     fm_helium \
     android.hardware.bluetooth@1.0-impl-qti \
     android.hardware.gnss@2.1-impl-qti \
@@ -909,6 +910,7 @@ PRODUCT_PACKAGES += \
     TimeService \
     QtiTelephonyService \
     imssettings \
+    ims \
     qcrilmsgtunnel \
     qcrilhook \
     android.hardware.gnss@2.1-service-qti.xml \
