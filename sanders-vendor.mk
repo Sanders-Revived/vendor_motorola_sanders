@@ -894,6 +894,8 @@ PRODUCT_PACKAGES += \
     vendor.qti.memory.pasrmanager@1.0 \
     vendor.qti.memory.pasrmanager@1.1 \
     libavenhancements \
+    libimscamera_jni \
+    libimsmedia_jni \
     libmmparserextractor \
     libmmparser_lite \
     com.qualcomm.qti.ant@1.0 \
@@ -960,6 +962,10 @@ PRODUCT_PACKAGES += \
     xtwifi-inet-agent
 
 PRODUCT_PACKAGES += \
+    system_ext_priv-app_ims_lib_arm_libimscamera_jni_so \
+    system_ext_priv-app_ims_lib_arm_libimsmedia_jni_so \
+    system_ext_priv-app_ims_lib_arm64_libimscamera_jni_so \
+    system_ext_priv-app_ims_lib_arm64_libimsmedia_jni_so \
     vendor_firmware_wlan_prima_WCNSS_qcom_wlan_nv_bin \
     vendor_firmware_wlan_prima_WCNSS_qcom_wlan_nv_Argentina_bin \
     vendor_firmware_wlan_prima_WCNSS_qcom_wlan_nv_Brazil_bin \

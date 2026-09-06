@@ -17368,6 +17368,7 @@ cc_prebuilt_library_shared {
                 "lib-imsxml",
                 "lib-imsqimf",
                 "liblog",
+                "libz",
                 "libc++",
                 "libc",
                 "libm",
@@ -22031,6 +22032,98 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libimscamera_jni",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/system_ext/lib/libimscamera_jni.so",
+            ],
+            shared_libs: [
+                "libnativehelper",
+                "libcutils",
+                "libutils",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libimscamera_jni.so",
+            ],
+            shared_libs: [
+                "libnativehelper",
+                "libcutils",
+                "libutils",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libimsmedia_jni",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/system_ext/lib/libimsmedia_jni.so",
+            ],
+            shared_libs: [
+                "libnativehelper",
+                "libcutils",
+                "libutils",
+                "libgui",
+                "libbinder",
+                "liblog",
+                "libandroid",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libimsmedia_jni.so",
+            ],
+            shared_libs: [
+                "libnativehelper",
+                "libcutils",
+                "libutils",
+                "libgui",
+                "libbinder",
+                "liblog",
+                "libandroid",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libmmparserextractor",
     owner: "motorola",
     strip: {
@@ -23018,7 +23111,6 @@ cc_prebuilt_binary {
                 "libqmi_csi",
                 "libdsi_netctrl",
                 "libdiag",
-                "libwpa_client",
                 "libcneapiclient",
                 "libandroid_net",
                 "libutils",
@@ -23757,6 +23849,34 @@ cc_prebuilt_binary {
     },
     prefer: true,
     soc_specific: true,
+}
+
+install_symlink {
+    name: "system_ext_priv-app_ims_lib_arm_libimscamera_jni_so",
+    system_ext_specific: true,
+    installed_location: "priv-app/ims/lib/arm/libimscamera_jni.so",
+    symlink_target: "/system_ext/lib/libimscamera_jni.so",
+}
+
+install_symlink {
+    name: "system_ext_priv-app_ims_lib_arm_libimsmedia_jni_so",
+    system_ext_specific: true,
+    installed_location: "priv-app/ims/lib/arm/libimsmedia_jni.so",
+    symlink_target: "/system_ext/lib/libimsmedia_jni.so",
+}
+
+install_symlink {
+    name: "system_ext_priv-app_ims_lib_arm64_libimscamera_jni_so",
+    system_ext_specific: true,
+    installed_location: "priv-app/ims/lib/arm64/libimscamera_jni.so",
+    symlink_target: "/system_ext/lib64/libimscamera_jni.so",
+}
+
+install_symlink {
+    name: "system_ext_priv-app_ims_lib_arm64_libimsmedia_jni_so",
+    system_ext_specific: true,
+    installed_location: "priv-app/ims/lib/arm64/libimsmedia_jni.so",
+    symlink_target: "/system_ext/lib64/libimsmedia_jni.so",
 }
 
 install_symlink {
