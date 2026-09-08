@@ -149,7 +149,6 @@ PRODUCT_PACKAGES += \
     libc2d30_bltlib \
     libdiag \
     libdisp-aba \
-    libdsi_netctrl \
     libdsutils \
     libfastcvadsp_stub \
     libfastcvopt \
@@ -161,18 +160,11 @@ PRODUCT_PACKAGES += \
     libmdmdetect \
     libmm-hdcpmgr \
     libmmosal \
-    libpdmapper \
-    libqcci_legacy \
-    libqdi \
-    libqdp \
     libqmi \
     libqmi_cci \
-    libqmi_client_helper \
     libqmi_client_qmux \
     libqmi_common_so \
-    libqmi_csi \
     libqmi_encdec \
-    libqmi_legacy \
     libqmiservices \
     libqtigef \
     libscalar \
@@ -760,6 +752,7 @@ PRODUCT_PACKAGES += \
     libdisplayconfig.qti \
     libdrmfs \
     libdrmtime \
+    libdsi_netctrl \
     libfm-hci \
     libgdtap \
     libgeofencing \
@@ -786,15 +779,22 @@ PRODUCT_PACKAGES += \
     liboemaids_vendor \
     liboemcrypto \
     libops \
+    libpdmapper \
     libperfconfig \
     libperfgluelayer \
     libperfioctl \
     libperipheral_client \
     libqcc_file_agent \
+    libqcci_legacy \
     libqcmaputils \
     libqcrilFramework \
     libqcrildatactl \
+    libqdi \
+    libqdp \
     libqisl \
+    libqmi_client_helper \
+    libqmi_csi \
+    libqmi_legacy \
     libqrtr \
     libqsocket \
     libqti-perfd-client-vendor \
@@ -866,6 +866,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.radio.internal.deviceinfo@1.0 \
     vendor.qti.hardware.radio.lpa@1.0 \
     vendor.qti.hardware.radio.lpa@1.1 \
+    vendor.qti.hardware.radio.lpa@1.2 \
     vendor.qti.hardware.radio.qcrilhook@1.0 \
     vendor.qti.hardware.radio.qtiradio@1.0 \
     vendor.qti.hardware.radio.qtiradio@2.0 \
