@@ -6,6 +6,11 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/motorola/sanders
 
 PRODUCT_COPY_FILES += \
+    vendor/motorola/sanders/proprietary/vendor/lib/modules/isdbt.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/isdbt.ko \
+    vendor/motorola/sanders/proprietary/product/lib64/libdtvhal.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libdtvhal.so \
+    vendor/motorola/sanders/proprietary/product/lib64/libdtvtuner.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libdtvtuner.so \
+    vendor/motorola/sanders/proprietary/product/etc/permissions/sku_XT1802/mot_dtv_permissions.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/sku_XT1802/mot_dtv_permissions.xml \
+    vendor/motorola/sanders/proprietary/product/etc/permissions/sku_XT1802/com.motorola.hardware.dtv.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/sku_XT1802/com.motorola.hardware.dtv.xml \
     vendor/motorola/sanders/proprietary/product/etc/permissions/telephony_product_privapp-permissions-qti.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/telephony_product_privapp-permissions-qti.xml \
     vendor/motorola/sanders/proprietary/system_ext/etc/permissions/qcrilhook.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/qcrilhook.xml \
     vendor/motorola/sanders/proprietary/system_ext/etc/permissions/qti_libpermissions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/qti_libpermissions.xml \
@@ -907,6 +912,8 @@ PRODUCT_PACKAGES += \
     imssettings \
     ims \
     qcrilmsgtunnel \
+    DTVPlayer \
+    DTVService \
     qcrilhook \
     android.hardware.gnss@2.1-service-qti.xml \
     manifest_android.hardware.drm@1.4-service.widevine.xml \
