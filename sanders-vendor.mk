@@ -6,11 +6,6 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/motorola/sanders
 
 PRODUCT_COPY_FILES += \
-    vendor/motorola/sanders/proprietary/vendor/lib/modules/isdbt.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/isdbt.ko \
-    vendor/motorola/sanders/proprietary/product/lib64/libdtvhal.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libdtvhal.so \
-    vendor/motorola/sanders/proprietary/product/lib64/libdtvtuner.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libdtvtuner.so \
-    vendor/motorola/sanders/proprietary/product/etc/permissions/sku_XT1802/mot_dtv_permissions.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/sku_XT1802/mot_dtv_permissions.xml \
-    vendor/motorola/sanders/proprietary/product/etc/permissions/sku_XT1802/com.motorola.hardware.dtv.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/sku_XT1802/com.motorola.hardware.dtv.xml \
     vendor/motorola/sanders/proprietary/product/etc/permissions/telephony_product_privapp-permissions-qti.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/telephony_product_privapp-permissions-qti.xml \
     vendor/motorola/sanders/proprietary/system_ext/etc/permissions/qcrilhook.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/qcrilhook.xml \
     vendor/motorola/sanders/proprietary/system_ext/etc/permissions/qti_libpermissions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/qti_libpermissions.xml \
@@ -59,7 +54,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sanders/proprietary/vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc \
     vendor/motorola/sanders/proprietary/vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth@1.0-service-qti.rc \
     vendor/motorola/sanders/proprietary/vendor/etc/init/android.hardware.drm@1.4-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.4-service.widevine.rc \
-    vendor/motorola/sanders/proprietary/vendor/etc/init/android.hardware.gnss@2.1-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gnss@2.1-service-qti.rc \
     vendor/motorola/sanders/proprietary/vendor/etc/init/cnd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/cnd.rc \
     vendor/motorola/sanders/proprietary/vendor/etc/init/dataadpl.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dataadpl.rc \
     vendor/motorola/sanders/proprietary/vendor/etc/init/dataqti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dataqti.rc \
@@ -94,6 +88,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sanders/proprietary/vendor/etc/wifi/WCNSS_qcom_wlan_nv_India.bin:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_wlan_nv_India.bin \
     vendor/motorola/sanders/proprietary/vendor/etc/wifi/WCNSS_qcom_wlan_nv_epa.bin:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_wlan_nv_epa.bin \
     vendor/motorola/sanders/proprietary/vendor/etc/wifi/WCNSS_wlan_dictionary.dat:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_wlan_dictionary.dat \
+    vendor/motorola/sanders/proprietary/vendor/etc/xtwifi.conf:$(TARGET_COPY_OUT_VENDOR)/etc/xtwifi.conf \
     vendor/motorola/sanders/proprietary/vendor/firmware/a530_gpmu.fw2:$(TARGET_COPY_OUT_VENDOR)/firmware/a530_gpmu.fw2 \
     vendor/motorola/sanders/proprietary/vendor/firmware/a530_pfp.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a530_pfp.fw \
     vendor/motorola/sanders/proprietary/vendor/firmware/a530_pm4.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a530_pm4.fw \
@@ -117,6 +112,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sanders/proprietary/vendor/firmware/focaltech-biel-ft5436-06-0001-sanders.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/focaltech-biel-ft5436-06-0001-sanders.bin \
     vendor/motorola/sanders/proprietary/vendor/firmware/focaltech-djn-ft5436-02-0001-sanders.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/focaltech-djn-ft5436-02-0001-sanders.bin \
     vendor/motorola/sanders/proprietary/vendor/firmware/focaltech-toptouch-ft5436-0a-0001-sanders.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/focaltech-toptouch-ft5436-0a-0001-sanders.bin \
+    vendor/motorola/sanders/proprietary/vendor/lib/modules/isdbt.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/isdbt.ko \
     vendor/motorola/sanders/proprietary/vendor/radio/qcril_database/qcril.db:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/qcril.db \
     vendor/motorola/sanders/proprietary/vendor/radio/qcril_database/upgrade/0_initial.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/0_initial.sql \
     vendor/motorola/sanders/proprietary/vendor/radio/qcril_database/upgrade/10_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/10_version_update_ecc_table.sql \
@@ -667,7 +663,6 @@ PRODUCT_PACKAGES += \
     libq3dtools_adreno \
     fm_helium \
     android.hardware.bluetooth@1.0-impl-qti \
-    android.hardware.gnss@2.1-impl-qti \
     com.dsi.ant@1.0-impl \
     gatekeeper.msm8953 \
     keystore.msm8953 \
@@ -678,7 +673,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.fm@1.0-impl \
     vulkan.msm8953 \
     lib-imsSDP \
-    lib-rtpcommon \
     lib-imscmservice \
     lib-imsdpl \
     lib-imsqimf \
@@ -686,6 +680,7 @@ PRODUCT_PACKAGES += \
     lib-imsrcsbaseimpl \
     lib-imsxml \
     lib-rcsconfig \
+    lib-rtpcommon \
     lib-siputility \
     lib-uceservice \
     libC2D2 \
@@ -703,7 +698,6 @@ PRODUCT_PACKAGES += \
     libaudcal \
     libaudioalsa \
     libaudioparsers \
-    libbatching \
     libbt-hidlclient \
     libbtnv \
     libc2d30_bltlib \
@@ -726,10 +720,7 @@ PRODUCT_PACKAGES += \
     libfastcvadsp_stub \
     libfm-hci \
     libgdtap \
-    libgeofencing \
-    libgnss \
     libgnsspps \
-    libgps.utils \
     libhdcpsrm \
     libhdr_tm \
     libidl \
@@ -738,12 +729,9 @@ PRODUCT_PACKAGES += \
     liblbs_core \
     libllvm-qcom \
     libloc_api_v02 \
-    libloc_core \
     libloc_socket \
-    liblocation_api \
     liblocationservice \
     liblocationservice_glue \
-    liblocdiagiface \
     liblowi_client \
     liblowi_wifihal \
     liblqe \
@@ -894,6 +882,8 @@ PRODUCT_PACKAGES += \
     vendor.qti.latency@2.1 \
     vendor.qti.memory.pasrmanager@1.0 \
     vendor.qti.memory.pasrmanager@1.1 \
+    libdtvhal \
+    libdtvtuner \
     com.qualcomm.qti.ant@1.0 \
     com.quicinc.cne.api@1.0 \
     com.quicinc.cne.api@1.1 \
@@ -909,14 +899,13 @@ PRODUCT_PACKAGES += \
     CneApp \
     IWlanService \
     TimeService \
+    DTVPlayer \
+    DTVService \
     QtiTelephonyService \
     imssettings \
     ims \
     qcrilmsgtunnel \
-    DTVPlayer \
-    DTVService \
     qcrilhook \
-    android.hardware.gnss@2.1-service-qti.xml \
     manifest_android.hardware.drm@1.4-service.widevine.xml \
     vendor.qti.gnss@4.0-service.xml \
     adpl \
@@ -930,7 +919,6 @@ PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1-fpcservice \
     android.hardware.bluetooth@1.0-service-qti \
     android.hardware.drm@1.4-service.widevine \
-    android.hardware.gnss@2.1-service-qti \
     qcrild \
     vendor.display.color@1.0-service \
     vendor.qti.hardware.perf@2.2-service \
@@ -958,9 +946,7 @@ PRODUCT_PACKAGES += \
     tftp_server \
     thermal-engine \
     time_daemon \
-    xtra-daemon \
-    xtwifi-client \
-    xtwifi-inet-agent
+    xtra-daemon
 
 PRODUCT_PACKAGES += \
     system_ext_priv-app_ims_lib_arm64_libimscamera_jni_so \

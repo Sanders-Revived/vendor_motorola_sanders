@@ -14384,50 +14384,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "android.hardware.gnss@2.1-impl-qti",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/hw/android.hardware.gnss@2.1-impl-qti.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libhidlbase",
-                "libcutils",
-                "libutils",
-                "android.hardware.gnss@1.0",
-                "android.hardware.gnss@1.1",
-                "android.hardware.gnss@2.0",
-                "android.hardware.gnss@2.1",
-                "android.hardware.gnss.measurement_corrections@1.0",
-                "android.hardware.gnss.measurement_corrections@1.1",
-                "android.hardware.gnss.visibility_control@1.0",
-                "android.hardware.health@1.0",
-                "android.hardware.health@2.0",
-                "android.hardware.health@2.1",
-                "android.hardware.power@1.2",
-                "libbase",
-                "libloc_core",
-                "libgps.utils",
-                "liblocation_api",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "hw",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "com.dsi.ant@1.0-impl",
     owner: "motorola",
     strip: {
@@ -14712,10 +14668,19 @@ cc_prebuilt_library_shared {
             srcs: [
                 "proprietary/vendor/lib64/lib-imsSDP.so",
             ],
+            shared_libs: [
+                "libcutils",
+                "liblog",
+                "lib-imsdpl",
+                "lib-rtpcommon",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
         },
     },
     compile_multilib: "64",
-    check_elf_files: false,
     prefer: true,
     soc_specific: true,
 }
@@ -14965,6 +14930,35 @@ cc_prebuilt_library_shared {
                 "vendor.qti.ims.rcsconfig@2.1",
                 "vendor.qti.ims.factory@1.0",
                 "vendor.qti.ims.factory@1.1",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "lib-rtpcommon",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/lib-rtpcommon.so",
+            ],
+            shared_libs: [
+                "libdiag",
+                "libcutils",
+                "libutils",
+                "liblog",
+                "lib-imsdpl",
                 "libc++",
                 "libc",
                 "libm",
@@ -15435,35 +15429,6 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "libutils",
                 "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libbatching",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libbatching.so",
-            ],
-            shared_libs: [
-                "libutils",
-                "libcutils",
-                "liblog",
-                "libloc_core",
-                "libgps.utils",
                 "libc++",
                 "libc",
                 "libm",
@@ -16122,64 +16087,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libgeofencing",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libgeofencing.so",
-            ],
-            shared_libs: [
-                "libutils",
-                "libcutils",
-                "libgps.utils",
-                "liblog",
-                "libloc_core",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libgnss",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libgnss.so",
-            ],
-            shared_libs: [
-                "libutils",
-                "libcutils",
-                "liblog",
-                "libloc_core",
-                "libgps.utils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libgnsspps",
     owner: "motorola",
     strip: {
@@ -16195,34 +16102,6 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "libgps.utils",
                 "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libgps.utils",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libgps.utils.so",
-            ],
-            shared_libs: [
-                "libutils",
-                "libcutils",
-                "liblog",
-                "libprocessgroup",
                 "libc++",
                 "libc",
                 "libm",
@@ -16443,28 +16322,12 @@ cc_prebuilt_library_shared {
             srcs: [
                 "proprietary/vendor/lib64/libloc_api_v02.so",
             ],
-        },
-    },
-    compile_multilib: "64",
-    check_elf_files: false,
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libloc_core",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libloc_core.so",
-            ],
             shared_libs: [
                 "libutils",
                 "libcutils",
+                "libqmi_cci",
+                "libqmi_common_so",
+                "libloc_core",
                 "libgps.utils",
                 "liblog",
                 "libc++",
@@ -16496,34 +16359,6 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libgps.utils",
                 "libqsocket",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "liblocation_api",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/liblocation_api.so",
-            ],
-            shared_libs: [
-                "libutils",
-                "libcutils",
-                "libgps.utils",
-                "liblog",
                 "libc++",
                 "libc",
                 "libm",
@@ -16590,35 +16425,6 @@ cc_prebuilt_library_shared {
                 "liblbs_core",
                 "libdataitems",
                 "liblocation_api",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "liblocdiagiface",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/liblocdiagiface.so",
-            ],
-            shared_libs: [
-                "libgps.utils",
-                "libcutils",
-                "libdiag",
-                "liblog",
                 "libutils",
                 "libc++",
                 "libc",
@@ -17144,7 +16950,6 @@ cc_prebuilt_library_shared {
                 "libfmq",
                 "libhidlbase",
                 "vendor.qti.hardware.qccsyshal@1.0",
-                "libmmosal",
                 "libc++",
                 "libc",
                 "libm",
@@ -21109,6 +20914,56 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libdtvhal",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/product/lib64/libdtvhal.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libc++",
+                "libdl",
+                "libc",
+                "libm",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    product_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libdtvtuner",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/product/lib64/libdtvtuner.so",
+            ],
+            shared_libs: [
+                "libdtvhal",
+                "libc++",
+                "libdl",
+                "libc",
+                "libm",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    product_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "com.qualcomm.qti.ant@1.0",
     owner: "motorola",
     strip: {
@@ -21470,6 +21325,28 @@ android_app_import {
 }
 
 android_app_import {
+    name: "DTVPlayer",
+    owner: "motorola",
+    apk: "proprietary/product/app/DTVPlayer/DTVPlayer.apk",
+    certificate: "platform",
+    dex_preopt: {
+        enabled: false,
+    },
+    product_specific: true,
+}
+
+android_app_import {
+    name: "DTVService",
+    owner: "motorola",
+    apk: "proprietary/product/app/DTVService/DTVService.apk",
+    certificate: "platform",
+    dex_preopt: {
+        enabled: false,
+    },
+    product_specific: true,
+}
+
+android_app_import {
     name: "QtiTelephonyService",
     owner: "motorola",
     apk: "proprietary/system_ext/app/QtiTelephonyService/QtiTelephonyService.apk",
@@ -21522,15 +21399,6 @@ dex_import {
         "proprietary/system_ext/framework/qcrilhook.jar",
     ],
     system_ext_specific: true,
-}
-
-prebuilt_etc_xml {
-    name: "android.hardware.gnss@2.1-service-qti.xml",
-    owner: "motorola",
-    src: "proprietary/vendor/etc/vintf/manifest/android.hardware.gnss@2.1-service-qti.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    soc_specific: true,
 }
 
 prebuilt_etc_xml {
@@ -21901,42 +21769,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-    name: "android.hardware.gnss@2.1-service-qti",
-    owner: "motorola",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/hw/android.hardware.gnss@2.1-service-qti",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libbase",
-                "libutils",
-                "libgps.utils",
-                "libqti_vndfwk_detect",
-                "libhidlbase",
-                "android.hardware.gnss@1.0",
-                "android.hardware.gnss@1.1",
-                "android.hardware.gnss@2.0",
-                "android.hardware.gnss@2.1",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
     name: "qcrild",
     owner: "motorola",
     target: {
@@ -22284,6 +22116,7 @@ cc_prebuilt_binary {
         },
     },
     compile_multilib: "64",
+    check_elf_files: false,
     strip: {
         none: true,
     },
@@ -22818,54 +22651,6 @@ cc_prebuilt_binary {
     soc_specific: true,
 }
 
-cc_prebuilt_binary {
-    name: "xtwifi-client",
-    owner: "motorola",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/xtwifi-client",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    check_elf_files: false,
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "xtwifi-inet-agent",
-    owner: "motorola",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/xtwifi-inet-agent",
-            ],
-            shared_libs: [
-                "libc",
-                "libcutils",
-                "liblog",
-                "libcurl",
-                "libgps.utils",
-                "libavservices_minijail",
-                "libc++",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
-
 install_symlink {
     name: "system_ext_priv-app_ims_lib_arm64_libimscamera_jni_so",
     system_ext_specific: true,
@@ -22949,45 +22734,3 @@ install_symlink {
     installed_location: "lib64/libq3dtools_adreno.so",
     symlink_target: "/vendor/lib64/egl/libq3dtools_adreno.so",
 }
-
-android_app_import {
-	name: "DTVPlayer",
-	owner: "motorola",
-	apk: "proprietary/product/app/DTVPlayer/DTVPlayer.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	product_specific: true,
-}
-
-android_app_import {
-	name: "DTVService",
-	owner: "motorola",
-	apk: "proprietary/product/app/DTVService/DTVService.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	product_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "lib-rtpcommon",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/lib-rtpcommon.so",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    check_elf_files: false,
-    prefer: true,
-    soc_specific: true,
-}
-
