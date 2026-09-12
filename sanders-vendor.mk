@@ -678,6 +678,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.fm@1.0-impl \
     vulkan.msm8953 \
     lib-imsSDP \
+    lib-rtpcommon \
     lib-imscmservice \
     lib-imsdpl \
     lib-imsqimf \
