@@ -6,7 +6,7 @@ soong_namespace {
     imports: [
         "device/motorola/sanders",
         "hardware/motorola",
-        "hardware/qcom-caf/msm8996",
+        "hardware/qcom-caf/msm8996/display",
         "hardware/qcom-caf/wlan",
         "vendor/qcom/opensource/dataservices",
     ],
