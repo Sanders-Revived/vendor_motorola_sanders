@@ -114,7 +114,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sanders/proprietary/vendor/firmware/focaltech-biel-ft5436-06-0001-sanders.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/focaltech-biel-ft5436-06-0001-sanders.bin \
     vendor/motorola/sanders/proprietary/vendor/firmware/focaltech-djn-ft5436-02-0001-sanders.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/focaltech-djn-ft5436-02-0001-sanders.bin \
     vendor/motorola/sanders/proprietary/vendor/firmware/focaltech-toptouch-ft5436-0a-0001-sanders.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/focaltech-toptouch-ft5436-0a-0001-sanders.bin \
-    vendor/motorola/sanders/proprietary/vendor/lib/modules/isdbt.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/isdbt.ko \
     vendor/motorola/sanders/proprietary/vendor/radio/qcril_database/qcril.db:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/qcril.db \
     vendor/motorola/sanders/proprietary/vendor/radio/qcril_database/upgrade/0_initial.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/0_initial.sql \
     vendor/motorola/sanders/proprietary/vendor/radio/qcril_database/upgrade/10_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/10_version_update_ecc_table.sql \
@@ -884,6 +883,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.latency@2.1 \
     vendor.qti.memory.pasrmanager@1.0 \
     vendor.qti.memory.pasrmanager@1.1 \
+    isdbt \
     libdtvhal \
     libdtvtuner \
     com.qualcomm.qti.ant@1.0 \

@@ -20913,6 +20913,15 @@ cc_prebuilt_library_shared {
     soc_specific: true,
 }
 
+prebuilt_lib {
+    name: "isdbt",
+    owner: "motorola",
+    src: "proprietary/vendor/lib/modules/isdbt.ko",
+    filename: "isdbt.ko",
+    sub_dir: "modules",
+    soc_specific: true,
+}
+
 cc_prebuilt_library_shared {
     name: "libdtvhal",
     owner: "motorola",
