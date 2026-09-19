@@ -70,7 +70,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sanders/proprietary/vendor/etc/init/qcrild.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qcrild.rc \
     vendor/motorola/sanders/proprietary/vendor/etc/init/vendor.display.color@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.display.color@1.0-service.rc \
     vendor/motorola/sanders/proprietary/vendor/etc/init/vendor.qti.hardware.perf@2.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.perf@2.2-service.rc \
-    vendor/motorola/sanders/proprietary/vendor/etc/init/vendor.qti.hardware.qdutils_disp@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.qdutils_disp@1.0-service-qti.rc \
     vendor/motorola/sanders/proprietary/vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc \
     vendor/motorola/sanders/proprietary/vendor/etc/init/vendor.qti.rmt_storage.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.rmt_storage.rc \
     vendor/motorola/sanders/proprietary/vendor/etc/init/vendor.qti.tftp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.tftp.rc \
@@ -128,18 +127,34 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sanders/proprietary/vendor/radio/qcril_database/upgrade/9_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/9_version_update_ecc_table.sql
 
 PRODUCT_PACKAGES += \
+    eglSubDriverAndroid \
+    libEGL_adreno \
+    libGLESv1_CM_adreno \
     libGLESv2_adreno \
+    vulkan.adreno \
+    libC2D2 \
+    libCB \
     libOpenCL \
     libQSEEComAPI \
     libadreno_utils \
+    libc2d30_bltlib \
     libdiag \
     libfastcvopt \
+    libgpudataproducer \
     libgsl \
+    libhdr_tm \
     libllvm-glnext \
+    libmm-hdcpmgr \
     libqmi_cci \
     libqmi_common_so \
     libqmi_encdec \
+    libscalar \
+    libsdm-color \
+    libsdm-diag \
+    libsdm-disp-vndapis \
+    libsdmextension \
     libsensor1 \
+    libtinyxml2_1 \
     com.fingerprints.extension@1.0_vendor \
     camera.msm8953 \
     lib_mot_app6_metadata \
@@ -657,11 +672,6 @@ PRODUCT_PACKAGES += \
     com.qualcomm.qti.uceservice@2.2 \
     com.qualcomm.qti.uceservice@2.3 \
     deviceInfoServiceModule \
-    eglSubDriverAndroid \
-    libEGL_adreno \
-    libGLESv1_CM_adreno \
-    libQTapGLES \
-    libq3dtools_adreno \
     fm_helium \
     android.hardware.bluetooth@1.0-impl-qti \
     com.dsi.ant@1.0-impl \
@@ -672,7 +682,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.btconfigstore@1.0-impl \
     vendor.qti.hardware.btconfigstore@2.0-impl \
     vendor.qti.hardware.fm@1.0-impl \
-    vulkan.msm8953 \
     lib-imsSDP \
     lib-imscmservice \
     lib-imsdpl \
@@ -684,8 +693,6 @@ PRODUCT_PACKAGES += \
     lib-rtpcommon \
     lib-siputility \
     lib-uceservice \
-    libC2D2 \
-    libCB \
     libGPreqcancel \
     libGPreqcancel_svc \
     libSecureUILib \
@@ -701,7 +708,6 @@ PRODUCT_PACKAGES += \
     libaudioparsers \
     libbt-hidlclient \
     libbtnv \
-    libc2d30_bltlib \
     libcacertclient \
     libcdfw \
     libcdfw_remote_api \
@@ -713,7 +719,6 @@ PRODUCT_PACKAGES += \
     libcpion \
     libdataitems \
     libdisp-aba \
-    libdisplayconfig.qti \
     libdrmfs \
     libdrmtime \
     libdsi_netctrl \
@@ -723,12 +728,10 @@ PRODUCT_PACKAGES += \
     libgdtap \
     libgnsspps \
     libhdcpsrm \
-    libhdr_tm \
     libidl \
     libizat_client_api \
     libizat_core \
     liblbs_core \
-    libllvm-qcom \
     libloc_api_v02 \
     libloc_socket \
     liblocationservice \
@@ -737,7 +740,6 @@ PRODUCT_PACKAGES += \
     liblowi_wifihal \
     liblqe \
     libmdmdetect \
-    libmm-hdcpmgr \
     libmmosal \
     libnetmgr \
     libnetmgr_common \
@@ -779,11 +781,6 @@ PRODUCT_PACKAGES += \
     libril-qcril-hook-oem \
     librilqmiservices \
     librpmb \
-    libscalar \
-    libsdm-color \
-    libsdm-diag \
-    libsdm-disp-vndapis \
-    libsdmextension \
     libsecureui \
     libsecureui_svcsock \
     libsensor_reg \
@@ -794,7 +791,6 @@ PRODUCT_PACKAGES += \
     libsystem_health_mon \
     libthermalclient \
     libtime_genoff \
-    libtinyxml2_1 \
     libvpplibrary \
     libwms \
     libwqe \
@@ -808,8 +804,6 @@ PRODUCT_PACKAGES += \
     sensors.rp \
     sensors.ssc \
     vendor.display.color@1.0 \
-    vendor.display.color@1.1 \
-    vendor.display.color@1.2 \
     vendor.display.postproc@1.0 \
     vendor.qti.data.factory@2.0 \
     vendor.qti.data.factory@2.1 \
@@ -841,7 +835,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.fm@1.0 \
     vendor.qti.hardware.mwqemadapter@1.0 \
     vendor.qti.hardware.qccsyshal@1.0 \
-    vendor.qti.hardware.qdutils_disp@1.0 \
     vendor.qti.hardware.radio.am@1.0 \
     vendor.qti.hardware.radio.ims@1.0 \
     vendor.qti.hardware.radio.ims@1.1 \
@@ -924,7 +917,6 @@ PRODUCT_PACKAGES += \
     qcrild \
     vendor.display.color@1.0-service \
     vendor.qti.hardware.perf@2.2-service \
-    vendor.qti.hardware.qdutils_disp@1.0-service-qti \
     vendor.qti.hardware.tui_comm@1.0-service-qti \
     imsdatadaemon \
     imsqmidaemon \
@@ -959,7 +951,7 @@ PRODUCT_PACKAGES += \
     vendor_firmware_wlan_prima_WCNSS_qcom_wlan_nv_India_bin \
     vendor_firmware_wlan_prima_WCNSS_qcom_wlan_nv_epa_bin \
     vendor_firmware_wlan_prima_WCNSS_wlan_dictionary_dat \
+    vendor_lib_libEGL_adreno_so \
     vendor_lib_libGLESv2_adreno_so \
     vendor_lib64_libEGL_adreno_so \
-    vendor_lib64_libGLESv2_adreno_so \
-    vendor_lib64_libq3dtools_adreno_so
+    vendor_lib64_libGLESv2_adreno_so
