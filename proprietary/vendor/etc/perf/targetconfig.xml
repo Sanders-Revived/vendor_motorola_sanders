@@ -49,8 +49,7 @@
              SocIds="293,304"
              SynCore="1"
              MinCoreOnline="0"
-             GovInstanceType="1"
-             CpufreqGov="1" />
+             GovInstanceType="1" />
 
          <ClustersInfo Id="0" NumCores="4" Type="little" />
          <ClustersInfo Id="1" NumCores="4" Type="big" />
@@ -66,8 +65,7 @@
              SocIds="338,351"
              SynCore="1"
              MinCoreOnline="0"
-             GovInstanceType="1"
-             CpufreqGov="1" />
+             GovInstanceType="1" />
 
          <ClustersInfo Id="0" NumCores="4" Type="little" />
          <ClustersInfo Id="1" NumCores="4" Type="big" />
@@ -81,8 +79,7 @@
              TotalNumCores="8"
              SocIds="349,350"
              SynCore="1"
-             MinCoreOnline="0"
-             CpufreqGov="1" />
+             MinCoreOnline="0" />
 
          <ClustersInfo Id="0" NumCores="4" Type="little" />
          <ClustersInfo Id="1" NumCores="4" Type="big" />
