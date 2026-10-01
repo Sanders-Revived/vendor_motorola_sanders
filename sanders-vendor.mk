@@ -728,6 +728,7 @@ PRODUCT_PACKAGES += \
     libnlnetmgr \
     liboemcrypto \
     libops \
+    libpdmapper \
     libpdnotifier \
     libperfconfig \
     libperfgluelayer \
