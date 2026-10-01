@@ -11042,7 +11042,6 @@ cc_prebuilt_library_shared {
                 "libhardware",
                 "libqdMetaData",
                 "libsync",
-                "libgralloc1_shim",
                 "libc++",
                 "libc",
                 "libm",
