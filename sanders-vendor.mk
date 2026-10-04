@@ -855,7 +855,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.latency@2.1 \
     vendor.qti.memory.pasrmanager@1.0 \
     vendor.qti.memory.pasrmanager@1.1 \
-    isdbt \
     libdtvhal \
     libdtvtuner \
     com.qualcomm.qti.ant@1.0 \
