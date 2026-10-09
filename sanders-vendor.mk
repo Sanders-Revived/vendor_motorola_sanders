@@ -136,7 +136,6 @@ PRODUCT_PACKAGES += \
     libsensor1 \
     libtinyxml2_1 \
     com.fingerprints.extension@1.0_vendor \
-    camera.msm8953 \
     lib_mot_app6_metadata \
     lib_mot_led_calibration \
     lib_motsensorlistener \
@@ -201,7 +200,6 @@ PRODUCT_PACKAGES += \
     libjpegdmahw \
     libjpegehw \
     libllvd_smore \
-    libmm-qcamera \
     libmmcamera2_c2d_module \
     libmmcamera2_cpp_module \
     libmmcamera2_dcrf \
@@ -232,7 +230,6 @@ PRODUCT_PACKAGES += \
     libmmcamera_gt24c64_mono_eeprom \
     libmmcamera_hdr_gb_lib \
     libmmcamera_imglib \
-    libmmcamera_interface \
     libmmcamera_isp_abf40 \
     libmmcamera_isp_bcc40 \
     libmmcamera_isp_be_stats44 \
@@ -288,7 +285,6 @@ PRODUCT_PACKAGES += \
     libmmcamera_ubifocus_lib \
     libmmcamera_vstab_module \
     libmmjpeg \
-    libmmjpeg_interface \
     libmmqjpeg_codec \
     libmmqjpegdma \
     libmot_afd \
@@ -297,15 +293,12 @@ PRODUCT_PACKAGES += \
     libmotimager_utils \
     libmotocalibration \
     liboptizoom \
-    libqomx_core \
     libqomx_jpegdec \
     libqomx_jpegenc \
     libqomx_jpegenc_pipe \
     libremosaic_daemon \
     libseemore \
     libtrueportrait \
-    libts_detected_face_hal \
-    libts_face_beautify_hal \
     libubifocus \
     libvideoutils \
     com.qualcomm.qti.dpm.api@1.0_vendor \
