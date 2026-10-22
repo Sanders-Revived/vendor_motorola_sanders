@@ -132,30 +132,24 @@ PRODUCT_PACKAGES += \
     libEGL_adreno \
     libGLESv1_CM_adreno \
     libGLESv2_adreno \
-    vulkan.adreno \
     libC2D2 \
     libCB \
     libOpenCL \
     libQSEEComAPI \
+    libacdb-fts \
+    libacdbloader \
+    libacdbrtac \
+    libadiertac \
     libadreno_utils \
+    libaudcal \
+    libaudioalsa \
+    libaudioparsers \
     libc2d30_bltlib \
     libdiag \
     libfastcvopt \
-    libgpudataproducer \
     libgsl \
-    libhdr_tm \
     libllvm-glnext \
-    libmm-hdcpmgr \
-    libqmi_cci \
-    libqmi_common_so \
-    libqmi_encdec \
-    libscalar \
-    libsdm-color \
-    libsdm-diag \
-    libsdm-disp-vndapis \
-    libsdmextension \
-    libsensor1 \
-    libtinyxml2_1 \
+    libqtigef \
     com.fingerprints.extension@1.0_vendor \
     camera.msm8953 \
     lib_mot_app6_metadata \
@@ -329,6 +323,7 @@ PRODUCT_PACKAGES += \
     libts_face_beautify_hal \
     libubifocus \
     libvideoutils \
+    libvqzip \
     com.qualcomm.qti.imscmservice@2.0 \
     com.qualcomm.qti.imscmservice@2.1 \
     com.qualcomm.qti.imscmservice@2.2 \
@@ -337,7 +332,6 @@ PRODUCT_PACKAGES += \
     com.qualcomm.qti.uceservice@2.2 \
     com.qualcomm.qti.uceservice@2.3 \
     deviceInfoServiceModule \
-    fm_helium \
     android.hardware.bluetooth@1.0-impl-qti \
     com.dsi.ant@1.0-impl \
     gatekeeper.msm8953 \
@@ -346,7 +340,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.bluetooth_sar@1.1-impl \
     vendor.qti.hardware.btconfigstore@1.0-impl \
     vendor.qti.hardware.btconfigstore@2.0-impl \
-    vendor.qti.hardware.fm@1.0-impl \
+    vulkan.adreno \
     lib-imsSDP \
     lib-imscmservice \
     lib-imsdpl \
@@ -362,15 +356,8 @@ PRODUCT_PACKAGES += \
     libGPreqcancel_svc \
     libSecureUILib \
     libStDrvInt \
-    libacdb-fts \
-    libacdbloader \
-    libacdbrtac \
-    libadiertac \
     libadsp_default_listener \
     libadsprpc \
-    libaudcal \
-    libaudioalsa \
-    libaudioparsers \
     libbt-hidlclient \
     libbtnv \
     libcacertclient \
@@ -389,10 +376,11 @@ PRODUCT_PACKAGES += \
     libdsi_netctrl \
     libdsutils \
     libfastcvadsp_stub \
-    libfm-hci \
     libgdtap \
     libgnsspps \
+    libgpudataproducer \
     libhdcpsrm \
+    libhdr_tm \
     libidl \
     libizat_client_api \
     libizat_core \
@@ -405,7 +393,7 @@ PRODUCT_PACKAGES += \
     liblowi_wifihal \
     liblqe \
     libmdmdetect \
-    libmmosal \
+    libmm-hdcpmgr \
     libnetmgr \
     libnetmgr_common \
     libnlnetmgr \
@@ -426,9 +414,12 @@ PRODUCT_PACKAGES += \
     libqdp \
     libqisl \
     libqmi \
+    libqmi_cci \
     libqmi_client_helper \
     libqmi_client_qmux \
+    libqmi_common_so \
     libqmi_csi \
+    libqmi_encdec \
     libqmi_legacy \
     libqmiservices \
     libqrtr \
@@ -438,7 +429,6 @@ PRODUCT_PACKAGES += \
     libqti-perfd \
     libqti-util-vendor \
     libqti-util \
-    libqtigef \
     libril-qc-hal-qmi \
     libril-qc-logger \
     libril-qc-ltedirectdisc \
@@ -446,8 +436,14 @@ PRODUCT_PACKAGES += \
     libril-qcril-hook-oem \
     librilqmiservices \
     librpmb \
+    libscalar \
+    libsdm-color \
+    libsdm-diag \
+    libsdm-disp-vndapis \
+    libsdmextension \
     libsecureui \
     libsecureui_svcsock \
+    libsensor1 \
     libsensor_reg \
     libsensorcal \
     libsoc_helper \
@@ -456,7 +452,7 @@ PRODUCT_PACKAGES += \
     libsystem_health_mon \
     libthermalclient \
     libtime_genoff \
-    libvpplibrary \
+    libtinyxml2_1 \
     libwms \
     libwqe \
     libwvhidl \
@@ -549,7 +545,6 @@ PRODUCT_PACKAGES += \
     com.quicinc.cne.constants@1.0 \
     com.quicinc.cne.constants@2.0 \
     com.quicinc.cne.constants@2.1 \
-    libavenhancements \
     libdiag_system \
     libimscamera_jni \
     libimsmedia_jni \
@@ -573,7 +568,6 @@ PRODUCT_PACKAGES += \
     charge_only_mode \
     cnd \
     cnss-daemon \
-    fm_qsoc_patches \
     hvdcp_opti \
     android.hardware.biometrics.fingerprint@2.1-fpcservice \
     android.hardware.bluetooth@1.0-service-qti \
