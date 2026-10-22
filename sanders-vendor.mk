@@ -540,12 +540,14 @@ PRODUCT_PACKAGES += \
     libdtvhal \
     libdtvtuner \
     com.qualcomm.qti.ant@1.0 \
+    com.qualcomm.qti.dpm.api@1.0 \
     com.quicinc.cne.api@1.0 \
     com.quicinc.cne.api@1.1 \
     com.quicinc.cne.constants@1.0 \
     com.quicinc.cne.constants@2.0 \
     com.quicinc.cne.constants@2.1 \
     libdiag_system \
+    libdpmframework \
     libimscamera_jni \
     libimsmedia_jni \
     libmwqemiptablemgr \

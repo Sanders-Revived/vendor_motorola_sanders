@@ -12158,6 +12158,34 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "com.qualcomm.qti.dpm.api@1.0",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/com.qualcomm.qti.dpm.api@1.0.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "com.quicinc.cne.api@1.0",
     owner: "motorola",
     strip: {
@@ -12322,6 +12350,39 @@ cc_prebuilt_library_shared {
                 "libc",
                 "libcutils",
                 "libc++",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libdpmframework",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libdpmframework.so",
+            ],
+            shared_libs: [
+                "libdiag_system",
+                "libbinder",
+                "libcutils",
+                "libutils",
+                "liblog",
+                "libhidlbase",
+                "libhardware",
+                "libhardware_legacy",
+                "com.qualcomm.qti.dpm.api@1.0",
+                "libc++",
+                "libc",
                 "libm",
                 "libdl",
             ],
