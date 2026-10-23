@@ -6817,7 +6817,6 @@ cc_prebuilt_library_shared {
                 "libhidlbase",
                 "libhardware",
                 "libutils",
-                "vendor.qti.hardware.dsp@1.0",
                 "liblog",
                 "libc",
                 "libcutils",
